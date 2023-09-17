@@ -1,0 +1,19 @@
+# Marcar pelo menos uma chackbox.
+
+When called, the function will return false if no checkbox has been checked and true if one or both is.
+
+It works as follows, the reducer function has two arguments, the accumulator (acc) and the current value (curr).
+
+For every iteration over the array, the reducer will return true if either the accumulator or the current value is true.
+the return value of the previous iteration is the accumulator of the current iteration, therefore, if it ever is true, it will stay true until the end.
+
+$(document).ready(function() {
+    $("form").submit(function() {
+
+        if ($('input:checkbox').filter(':checked').length < 1) {
+
+            alert("Marque pelo menos uma opção de caractere.");
+            return false;
+        }
+    });
+});

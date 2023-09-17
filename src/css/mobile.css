@@ -1,0 +1,49 @@
+@media only screen and (max-width: 600px) {
+    .password-random {
+        font-size: 0.78rem;
+    }
+
+    .result {
+        align-items: center;
+        width: 400px;
+        font-size: 0.8rem;
+    }
+
+    .main {
+        min-height: 50vh;
+    }
+
+    .quantity, .char {
+        text-align: center;
+        margin: 0.5rem 2rem 0rem 2rem;
+    }
+
+    .container {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .slide {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+    
+    .slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 70%;
+        height: 3px;
+        background: rgb(128, 128, 128);
+    }
+
+    .input {
+        text-align: center;
+        padding: 10px;
+        accent-color: rgb(0, 0, 0);
+    }
+
+
+}

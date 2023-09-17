@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/mobile.css">
+    <title>password.random();</title>
+</head>
+<body onload="teste()">
+    
+    <header>
+
+        <nav class="navbar">
+            <h1 class="password-random">
+                <span style="color: rgb(50, 50, 206);">password</span>.<span style="color: rgb(216, 76, 76);">random</span><span style="color: yellow">(<span id="parameters"> </span>)</span>;
+            </h1>
+        </nav>
+
+    </header>
+
+    <!-- <button class="btn" type="button" onclick="copyToClickBoard()">Clique para Copiar</button> -->
+    <div class="box result">
+        
+        <div class="string-pass">
+            <p id="result"></p>
+        </div>
+
+        <div class="copy">
+            <button class="btn-copy" type="button" onclick="clickCopy()">Copiar</button>
+        </div>
+    </div>
+
+    <main class="main">
+
+        <div class="box">
+            
+            <p class="center">Personalizar Senha</p>
+            <div class="line"></div>
+
+            <div class="container">
+
+                <div class="quantity">
+
+                    <p>Quantidade de Caracteres</p>
+
+                    <div class="slide">
+
+                        <input type="range" min="1" max="25" value="12" class="slider" id="passwordSize" onchange="teste()">
+                        <p><span id="output"></span></p>
+
+                    </div>
+
+                </div>
+
+                <div class="char">
+
+                    <p>Caracteres Inclusos</p>
+
+                    <form class="input" id="mainForm">
+
+                        <label for="chk-number">Números</label>
+                        <input class="checkbox" id="chk-number" type="checkbox" checked><br>
+
+                        <label for="chk-letter">Letras</label>
+                        <input class="checkbox" id="chk-letter" type="checkbox" checked><br>
+
+                        <label for="chk-special">Especiais</label>
+                        <input class="checkbox" id="chk-special" type="checkbox" checked><br>
+                        
+                        <button type="button" class="btn" onclick="teste()">Gerar Senha</button>
+                        
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="src/js/index.js"></script>
+    <script src="src/js/check.js"></script>
+
+</body>
+</html>
